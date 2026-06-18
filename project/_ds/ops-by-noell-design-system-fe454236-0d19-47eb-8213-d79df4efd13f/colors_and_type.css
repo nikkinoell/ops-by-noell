@@ -1,0 +1,346 @@
+/* ============================================================
+   Ops by Noell — Design System Tokens
+   "Analog Signal" dark palette. Wine primary on near-black plum.
+   Source of truth: opsbynoell-site-production/src/app/globals.css
+   ============================================================ */
+
+/* --- Webfonts ----------------------------------------------- */
+/* Primary fonts are loaded from local woff2 files in fonts/.
+   In production they're loaded via next/font in src/app/layout.tsx.
+   Courier New is a system fallback used for the "system status" register.
+   The path is resolved RELATIVE TO THIS CSS FILE — so when this is imported
+   from preview/card.css, ui_kits/*/styles.css, etc, the same path works. */
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url("./fonts/PlayfairDisplay-normal-latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url("./fonts/PlayfairDisplay-italic-latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("./fonts/Inter-latin.woff2") format("woff2");
+}
+
+/* Note: the "by Noell" script in the logo lockup is BAKED INTO THE LOGO PNG.
+   It's not a live web font and intentionally not exposed as a token. If you
+   need the script, drop in the logo image; don't typeset it. */
+
+:root {
+  /* ============================================================
+     COLORS
+     ============================================================ */
+
+  /* Surface / background (dark plum stack) */
+  --color-bg-base:    #1F1219;   /* page background */
+  --color-bg-surface: #271520;   /* cards, secondary surfaces */
+  --color-bg-raised:  #301A26;   /* raised cards, popovers, nested */
+  --color-bg-deep:    #2A1520;   /* "blush" – deep section block */
+  --color-bg-deeper:  #231019;   /* "blush-light" – deepest */
+
+  /* Foreground / text (cream stack) */
+  --color-fg:         #F5EAE0;   /* cream, primary text on dark */
+  --color-fg-dim:     #EBD9CC;   /* cream-dark, secondary headers */
+  --color-fg-muted:   rgba(245, 234, 224, 0.82);  /* reassurance copy */
+  --color-fg-soft:    rgba(245, 234, 224, 0.70);  /* body on dark */
+  --color-fg-mute:    rgba(245, 234, 224, 0.55);  /* tertiary captions */
+  --color-fg-faint:   rgba(245, 234, 224, 0.40);  /* eyebrow secondary */
+  --color-warm-gray:  #A89090;   /* footer captions */
+  --color-warm-border: rgba(245, 234, 224, 0.10);
+
+  /* Brand — Wine */
+  --color-wine:        #8B2A42;  /* primary brand color */
+  --color-wine-dark:   #6B1A2E;  /* deep wine */
+  --color-wine-light:  #B5415E;  /* brighter wine, accents */
+  --color-wine-deepest:#5A1F30;  /* button gradient end */
+  --color-wine-bright: #8B4D5E;  /* button gradient start */
+
+  /* Brand — Lilac (used for the Noell Support visitor bubble, that's it) */
+  --color-lilac:        #C4A8D4;
+  --color-lilac-dark:   #9B6FB8;
+  --color-lilac-light:  #D4BCDF;
+  --color-lilac-deepest: #6B4F80;
+
+  /* Muted text on dark */
+  --color-muted-strong: #C4A8A8;
+  --color-muted-medium: #A88888;
+
+  /* Status / signal */
+  --color-signal-online: #22C55E;        /* "system active" dot */
+  --color-signal-warm:   #F59E0B;        /* warm intent */
+  --color-signal-hot:    var(--color-wine-light);
+  --color-signal-error:  oklch(0.577 0.245 27.325);
+
+  /* Borders & inputs */
+  --color-border:      rgba(245, 234, 224, 0.10);
+  --color-border-soft: rgba(245, 234, 224, 0.06);
+  --color-border-strong: rgba(245, 234, 224, 0.18);
+  --color-input-bg:    #301A26;
+  --color-input-bg-focus: #271520;
+  --color-input-border-focus: rgba(155, 111, 184, 0.60);
+  --color-ring:        #8B2A42;
+
+  /* Semantic */
+  --color-primary:           var(--color-wine);
+  --color-primary-foreground: var(--color-fg);
+  --color-accent:            var(--color-bg-deep);
+  --color-card:              var(--color-bg-surface);
+  --color-card-foreground:   var(--color-fg);
+  --color-destructive:       var(--color-signal-error);
+
+  /* ============================================================
+     TYPOGRAPHY
+     ============================================================ */
+
+  /* Font stacks */
+  --font-serif:  "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans:   "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono:   "Courier New", ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
+  --font-system: var(--font-mono);  /* system-status register */
+  --font-heading: var(--font-serif);
+  --font-body:   var(--font-sans);
+
+  /* Type scale (rem-based, calibrated to homepage hero & sections) */
+  --text-xs:    0.6875rem;  /* 11px — eyebrows, micro */
+  --text-sm:    0.75rem;    /* 12px — captions */
+  --text-base:  0.875rem;   /* 14px — small body */
+  --text-md:    1rem;       /* 16px — body */
+  --text-lg:    1.125rem;   /* 18px — lead */
+  --text-xl:    1.25rem;    /* 20px — small head */
+  --text-2xl:   1.5rem;     /* 24px — h3 mobile */
+  --text-3xl:   1.875rem;   /* 30px — h2 mobile */
+  --text-4xl:   2.25rem;    /* 36px — h1 mobile */
+  --text-5xl:   3rem;       /* 48px — h2 desktop */
+  --text-6xl:   3.75rem;    /* 60px — h1 desktop */
+  --text-7xl:   4.5rem;     /* 72px — hero display */
+
+  /* Line heights */
+  --leading-tight:  1.1;
+  --leading-snug:   1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  /* Letter spacing */
+  --tracking-tightest: -0.02em;
+  --tracking-tight:   -0.01em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.05em;
+  --tracking-widest:  0.25em;   /* eyebrow signature */
+
+  /* Weight */
+  --weight-normal:   400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  /* ============================================================
+     SPACING, RADII, SHADOWS, MOTION
+     ============================================================ */
+
+  /* Radii — large + soft. Cards use 22px, pills use full, CTA blocks 32px */
+  --radius-xs:  4px;
+  --radius-sm:  8px;
+  --radius-md:  10px;
+  --radius-lg:  16px;
+  --radius-xl:  22px;   /* card signature */
+  --radius-2xl: 24px;   /* chat panel */
+  --radius-3xl: 32px;   /* CTA block */
+  --radius-pill: 9999px;
+
+  /* Spacing — Tailwind-aligned 4px grid */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* Shadows — warm-black tinted, multi-layer */
+  --shadow-sm:    0 2px 4px 0 rgba(28, 25, 23, 0.08);
+  --shadow-card:  0 4px 8px 0 rgba(28, 25, 23, 0.05),
+                  0 15px 15px 0 rgba(28, 25, 23, 0.04);
+  --shadow-raised: 0 34px 21px 0 rgba(0, 0, 0, 0.20),
+                   0 4px 8px 0 rgba(0, 0, 0, 0.10);
+  --shadow-panel:  0 95px 27px 0 rgba(28, 25, 23, 0.00),
+                   0 61px 24px 0 rgba(28, 25, 23, 0.04),
+                   0 34px 21px 0 rgba(28, 25, 23, 0.10),
+                   0 15px 15px 0 rgba(28, 25, 23, 0.16),
+                   0 4px 8px 0 rgba(28, 25, 23, 0.20);
+  --shadow-wine-glow: 0 8px 24px 0 rgba(106, 44, 62, 0.22);
+  --shadow-wine-soft: 0 4px 8px 0 rgba(106, 44, 62, 0.12),
+                      0 15px 15px 0 rgba(106, 44, 62, 0.08);
+
+  /* Button inner-glow (primary wine button signature) */
+  --shadow-btn-primary:
+    0 4px 8px 0 rgba(90, 31, 48, 0.18),
+    0 2px 4px 0 rgba(90, 31, 48, 0.12),
+    0 0 0 1px rgba(90, 31, 48, 0.12),
+    inset 0 1px 1px 2px rgba(255, 255, 255, 0.28),
+    inset 0 -1px 5px 2px rgba(255, 255, 255, 0.20);
+
+  /* Gradients — signature treatments */
+  --gradient-hero-wine: linear-gradient(to top,
+    rgba(139, 42, 66, 0.50) 0%,
+    rgba(31, 18, 25, 0.90) 50%,
+    rgba(31, 18, 25, 1.00) 100%);
+  --gradient-italic-accent: linear-gradient(to bottom,
+    rgba(139, 77, 94, 1) 0%,
+    rgba(107, 45, 62, 1) 100%);  /* used as text-fill on italic accent words */
+  --gradient-btn-primary: linear-gradient(181deg,
+    #8B4D5E 18.12%, #5A1F30 99.57%);
+  --gradient-cta-block: linear-gradient(135deg,
+    #8B2A42 0%, #B5415E 50%, #6B1A2E 100%);
+  --gradient-founder-card: linear-gradient(to bottom,
+    #301A26 0%, #271520 50%, #301A26 100%);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast:   150ms;
+  --duration-base:   200ms;
+  --duration-medium: 300ms;
+  --duration-slow:   600ms;
+  --duration-ambient: 2500ms;  /* breathing rings, halo pulses */
+}
+
+/* ============================================================
+   SEMANTIC TYPOGRAPHY CLASSES
+   ============================================================ */
+
+.os-display {
+  font-family: var(--font-serif);
+  font-weight: var(--weight-semibold);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tightest);
+  color: var(--color-fg);
+  text-wrap: balance;
+}
+
+.os-h1 {
+  font-family: var(--font-serif);
+  font-weight: var(--weight-semibold);
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tightest);
+  color: var(--color-fg);
+  text-wrap: balance;
+}
+
+.os-h2 {
+  font-family: var(--font-serif);
+  font-weight: var(--weight-semibold);
+  font-size: clamp(1.875rem, 4vw, 3rem);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-fg);
+  text-wrap: balance;
+}
+
+.os-h3 {
+  font-family: var(--font-serif);
+  font-weight: var(--weight-semibold);
+  font-size: clamp(1.5rem, 2.5vw, 1.875rem);
+  line-height: var(--leading-snug);
+  color: var(--color-fg);
+}
+
+.os-h4 {
+  font-family: var(--font-serif);
+  font-weight: var(--weight-medium);
+  font-size: var(--text-xl);
+  line-height: var(--leading-snug);
+  color: var(--color-fg);
+}
+
+/* Signature italic accent inside a serif heading. Wrap the word(s)
+   you want to emphasize: <h1 class="os-h1">Two types of business. <span class="os-accent">One standard.</span></h1> */
+.os-accent {
+  background: var(--gradient-italic-accent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-style: italic;
+}
+
+/* Eyebrow — the brand's section-opener voice. 11px, uppercase, wide-track.
+   Frequently wine-colored or muted-strong. Always paired with a serif headline below. */
+.os-eyebrow {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-medium);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-widest);
+  color: var(--color-wine);
+}
+.os-eyebrow--muted { color: var(--color-muted-strong); }
+.os-eyebrow--cream { color: rgba(245, 234, 224, 0.60); }
+
+/* System-status — the AIM-era nostalgia / "ops are running" register.
+   Used for log timestamps, status badges, and the "online" dot label. */
+.os-system {
+  font-family: var(--font-mono);
+  font-weight: var(--weight-normal);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-widest);
+  color: var(--color-fg-mute);
+}
+
+/* Body copy */
+.os-lead {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-normal);
+  font-size: clamp(1rem, 1.4vw, 1.25rem);
+  line-height: var(--leading-relaxed);
+  color: var(--color-fg-soft);
+}
+.os-body {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-normal);
+  font-size: var(--text-md);
+  line-height: var(--leading-relaxed);
+  color: var(--color-fg-soft);
+}
+.os-body-sm {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-normal);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--color-fg-soft);
+}
+.os-caption {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-normal);
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+  color: var(--color-fg-mute);
+}
+
+.os-code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background: var(--color-bg-raised);
+  color: var(--color-fg);
+  padding: 2px 6px;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--color-border);
+}
