@@ -159,254 +159,6 @@ i.ti { line-height:1; display:inline-flex; }
   </div>
 </section>
 
-<!-- ════ ROI NUDGE ════ -->
-<section style="padding:0 24px clamp(56px,9vw,104px);">
-  <div style="max-width:760px;margin:0 auto;text-align:center;background:#fff;border:1px solid rgba(139,42,66,0.18);border-radius:24px;padding:clamp(32px,5vw,48px);box-shadow:0 4px 8px rgba(28,25,23,.05),0 16px 26px rgba(139,42,66,0.08);">
-    <p style="font-weight:600;font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:#8B2A42;margin:0 0 14px;">Not sure which tier?</p>
-    <h2 style="font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:clamp(24px,3.2vw,34px);line-height:1.12;color:#20131c;margin:0 0 14px;text-wrap:balance;">See what a missed call is costing you first.</h2>
-    <p style="font-size:16px;line-height:1.65;color:#6e5b66;margin:0 0 28px;">Run the numbers in the ROI calculator, then book a free audit. We'll tell you which track fits, even if it's the smallest one.</p>
-    <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
-      <a href="index.html#calc" class="roi-btn-wine" style="display:inline-flex;align-items:center;justify-content:center;height:54px;padding:0 28px;background:#8B2A42;color:#fff;font-weight:700;font-size:15px;text-decoration:none;border-radius:12px;box-shadow:0 4px 8px rgba(90,31,48,.2),inset 0 1px 1px 2px rgba(255,255,255,0.2),inset 0 -1px 5px 2px rgba(255,255,255,0.12);transition:transform .2s cubic-bezier(.16,1,.3,1);">Open the ROI calculator</a>
-      <a href="index.html#book" class="roi-btn-cream" style="display:inline-flex;align-items:center;justify-content:center;height:54px;padding:0 28px;background:#FBF3EE;color:#8B2A42;font-weight:700;font-size:15px;text-decoration:none;border:1.5px solid rgba(139,42,66,0.4);border-radius:12px;transition:transform .2s cubic-bezier(.16,1,.3,1);">Book a free audit</a>
-    </div>
-  </div>
-</section>
-
-<!-- ════ FAQ ════ -->
-<section style="background:#FBF3EE;padding:clamp(56px,8vw,96px) 24px;">
-  <div style="max-width:780px;margin:0 auto;">
-    <div style="text-align:center;margin-bottom:48px;">
-      <p style="font-weight:600;font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:#8B2A42;margin:0 0 14px;">Questions</p>
-      <h2 style="font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:clamp(26px,3.5vw,40px);line-height:1.1;color:#20131c;margin:0;">Everything you'd want to know <em style="font-style:italic;font-weight:500;">before signing up.</em></h2>
-    </div>
-    <div style="display:flex;flex-direction:column;gap:2px;" id="faq-list">
-
-      <div class="faq-item" id="faq-0" style="background:#fff;border:1px solid rgba(139,42,66,0.12);border-radius:14px;overflow:hidden;">
-        <button onclick="toggleFaq(0)" style="width:100%;text-align:left;padding:20px 22px;background:none;border:0;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;font-family:inherit;">
-          <span style="font-size:15.5px;font-weight:600;color:#20131c;line-height:1.4;">What's the difference between Signal, System, and Full Stack?</span>
-          <span class="faq-plus" style="font-size:22px;color:#8B2A42;flex-shrink:0;line-height:1;margin-top:1px;">+</span>
-        </button>
-        <div class="faq-body" style="display:none;padding:0 22px 20px;">
-          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0 0 10px;">Signal ($397/mo) is the entry tier. All three agents are included: Noell Support handles 24/7 website chat and lead capture with HOT/WARM scoring, Noell Front Desk answers calls and schedules, and Noell Care handles returning clients — all working alongside your existing booking tool.</p>
-          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0 0 10px;">System ($897/mo) is the same three agents with the operational depth turned on: deep two-way integration with your PMS or booking tool (reading availability and writing confirmed bookings back), reactivation campaigns, no-show recovery, and review automation. Most practices start here.</p>
-          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0;">Full Stack ($1,497/mo) is for owners who want Noell to run the whole operation. Everything in System, plus a full website build or redesign, the Noell Ops CRM replacing GoHighLevel, a click-through audit, custom automation workflows, and a dedicated ops partner.</p>
-        </div>
-      </div>
-
-      <div class="faq-item" id="faq-1" style="background:#fff;border:1px solid rgba(139,42,66,0.12);border-radius:14px;overflow:hidden;">
-        <button onclick="toggleFaq(1)" style="width:100%;text-align:left;padding:20px 22px;background:none;border:0;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;font-family:inherit;">
-          <span style="font-size:15.5px;font-weight:600;color:#20131c;line-height:1.4;">Is this month-to-month or a contract?</span>
-          <span class="faq-plus" style="font-size:22px;color:#8B2A42;flex-shrink:0;line-height:1;margin-top:1px;">+</span>
-        </button>
-        <div class="faq-body" style="display:none;padding:0 22px 20px;">
-          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0;">Month-to-month. No long-term contracts. Cancel anytime with 30 days notice. Your monthly rate is locked at the price you signed up at for as long as you stay on that tier. Most clients stay because the agents pay for themselves within the first 60 days.</p>
-        </div>
-      </div>
-
-      <div class="faq-item" id="faq-2" style="background:#fff;border:1px solid rgba(139,42,66,0.12);border-radius:14px;overflow:hidden;">
-        <button onclick="toggleFaq(2)" style="width:100%;text-align:left;padding:20px 22px;background:none;border:0;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;font-family:inherit;">
-          <span style="font-size:15.5px;font-weight:600;color:#20131c;line-height:1.4;">What if it doesn't work for my business?</span>
-          <span class="faq-plus" style="font-size:22px;color:#8B2A42;flex-shrink:0;line-height:1;margin-top:1px;">+</span>
-        </button>
-        <div class="faq-body" style="display:none;padding:0 22px 20px;">
-          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0;">Every install includes a 90-day results check-in. If by day 90 the system hasn't produced measurable lift in at least one of: recovered calls, booked appointments, or captured reviews, we rebuild the core flows at no charge. If the rebuild hasn't moved the numbers by day 120, you can cancel with no further obligation. The one-time setup fee isn't refundable once provisioning has begun.</p>
-        </div>
-      </div>
-
-      <div class="faq-item" id="faq-3" style="background:#fff;border:1px solid rgba(139,42,66,0.12);border-radius:14px;overflow:hidden;">
-        <button onclick="toggleFaq(3)" style="width:100%;text-align:left;padding:20px 22px;background:none;border:0;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;font-family:inherit;">
-          <span style="font-size:15.5px;font-weight:600;color:#20131c;line-height:1.4;">Do I need to replace my current booking tool?</span>
-          <span class="faq-plus" style="font-size:22px;color:#8B2A42;flex-shrink:0;line-height:1;margin-top:1px;">+</span>
-        </button>
-        <div class="faq-body" style="display:none;padding:0 22px 20px;">
-          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0;">No. The Noell system layers on top of the booking, practice management, and field service software you already run across dental, salon and spa, wellness, and home services. Your team keeps the tool they trained on. On Signal, the system works alongside your tool via SMS and chat. On System and Full Stack, it integrates directly (reads availability, writes confirmed bookings back). Tell us what you use on your audit call and we'll confirm fit.</p>
-        </div>
-      </div>
-
-      <div class="faq-item" id="faq-4" style="background:#fff;border:1px solid rgba(139,42,66,0.12);border-radius:14px;overflow:hidden;">
-        <button onclick="toggleFaq(4)" style="width:100%;text-align:left;padding:20px 22px;background:none;border:0;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;font-family:inherit;">
-          <span style="font-size:15.5px;font-weight:600;color:#20131c;line-height:1.4;">What does "managed" actually mean?</span>
-          <span class="faq-plus" style="font-size:22px;color:#8B2A42;flex-shrink:0;line-height:1;margin-top:1px;">+</span>
-        </button>
-        <div class="faq-body" style="display:none;padding:0 22px 20px;">
-          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0;">You never touch the backend. Ongoing copy tweaks, automation adjustments, integration fixes, new review responses, seasonal campaign setup, messaging around holidays and closures — we handle all of it. The Noell team is the admin. You get the monthly report. If something isn't working, you tell us and we fix it. Managed means you don't become an ops person in addition to running your practice.</p>
-        </div>
-      </div>
-
-      <div class="faq-item" id="faq-5" style="background:#fff;border:1px solid rgba(139,42,66,0.12);border-radius:14px;overflow:hidden;">
-        <button onclick="toggleFaq(5)" style="width:100%;text-align:left;padding:20px 22px;background:none;border:0;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;font-family:inherit;">
-          <span style="font-size:15.5px;font-weight:600;color:#20131c;line-height:1.4;">How long until the system is live?</span>
-          <span class="faq-plus" style="font-size:22px;color:#8B2A42;flex-shrink:0;line-height:1;margin-top:1px;">+</span>
-        </button>
-        <div class="faq-body" style="display:none;padding:0 22px 20px;">
-          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0;">14 days from audit-to-live on most installs. A2P SMS registration takes 2–4 weeks on the carrier side but runs in parallel, so your SMS delivery goes live as soon as carriers approve — usually within the first 14 days. Multi-location and Full Stack builds can take up to 21 days. Your audit call confirms the timeline for your specific setup.</p>
-        </div>
-      </div>
-
-      <div class="faq-item" id="faq-6" style="background:#fff;border:1px solid rgba(139,42,66,0.12);border-radius:14px;overflow:hidden;">
-        <button onclick="toggleFaq(6)" style="width:100%;text-align:left;padding:20px 22px;background:none;border:0;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;font-family:inherit;">
-          <span style="font-size:15.5px;font-weight:600;color:#20131c;line-height:1.4;">What does Noell Support AI Chat actually do?</span>
-          <span class="faq-plus" style="font-size:22px;color:#8B2A42;flex-shrink:0;line-height:1;margin-top:1px;">+</span>
-        </button>
-        <div class="faq-body" style="display:none;padding:0 22px 20px;">
-          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0;">Noell Support is an AI chat agent on your website trained on your specific business — your services, pricing, hours, booking logic, tone. She handles the 80% of website conversations that are predictable: "Do you take my insurance?", "What's the earliest appointment?", "How much is a deep tissue?", "Can I reschedule?". She books appointments directly when she has enough information. When a conversation needs a human — refund requests, clinical questions, anything that smells like a complaint — she routes it to your team with the full chat context attached. She is not a generic ChatGPT wrapper.</p>
-        </div>
-      </div>
-
-      <div class="faq-item" id="faq-7" style="background:#fff;border:1px solid rgba(139,42,66,0.12);border-radius:14px;overflow:hidden;">
-        <button onclick="toggleFaq(7)" style="width:100%;text-align:left;padding:20px 22px;background:none;border:0;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;font-family:inherit;">
-          <span style="font-size:15.5px;font-weight:600;color:#20131c;line-height:1.4;">What is no-show recovery?</span>
-          <span class="faq-plus" style="font-size:22px;color:#8B2A42;flex-shrink:0;line-height:1;margin-top:1px;">+</span>
-        </button>
-        <div class="faq-body" style="display:none;padding:0 22px 20px;">
-          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0;">When a client no-shows, most practices just lose the revenue and move on. No-show recovery automatically texts the client within minutes of the miss, offers the next two available slots on your calendar, and rebooks them without anyone at your practice lifting a finger. On average, no-show recovery rebooks 35–45% of misses within 7 days.</p>
-        </div>
-      </div>
-
-      <div class="faq-item" id="faq-8" style="background:#fff;border:1px solid rgba(139,42,66,0.12);border-radius:14px;overflow:hidden;">
-        <button onclick="toggleFaq(8)" style="width:100%;text-align:left;padding:20px 22px;background:none;border:0;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;font-family:inherit;">
-          <span style="font-size:15.5px;font-weight:600;color:#20131c;line-height:1.4;">What is reactivation?</span>
-          <span class="faq-plus" style="font-size:22px;color:#8B2A42;flex-shrink:0;line-height:1;margin-top:1px;">+</span>
-        </button>
-        <div class="faq-body" style="display:none;padding:0 22px 20px;">
-          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0;">Reactivation campaigns automatically identify and contact inactive clients — typically 6+ months since last visit — with a sequence built around why they probably stopped coming. For salons, it's clients who drifted after a stylist moved. For massage and spa, it's seasonal drop-offs. For dental, it's unscheduled treatment plans sitting in the PMS. Reactivation is usually the highest-ROI automation a practice can run because the leads already know and trust you.</p>
-        </div>
-      </div>
-
-      <div class="faq-item" id="faq-9" style="background:#fff;border:1px solid rgba(139,42,66,0.12);border-radius:14px;overflow:hidden;">
-        <button onclick="toggleFaq(9)" style="width:100%;text-align:left;padding:20px 22px;background:none;border:0;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;font-family:inherit;">
-          <span style="font-size:15.5px;font-weight:600;color:#20131c;line-height:1.4;">Can I upgrade or downgrade later?</span>
-          <span class="faq-plus" style="font-size:22px;color:#8B2A42;flex-shrink:0;line-height:1;margin-top:1px;">+</span>
-        </button>
-        <div class="faq-body" style="display:none;padding:0 22px 20px;">
-          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0;">Yes. Upgrades are prorated and take effect immediately. Downgrades take effect at the start of the next billing month so nothing gets orphaned mid-build. If you're on Full Stack and we're still building your site or migrating you onto the Noell Ops CRM when you downgrade, we finish what we started on the original tier. No half-built systems.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-<script>
-function toggleFaq(i) {
-  const body = document.querySelectorAll('.faq-body')[i];
-  const plus = document.querySelectorAll('.faq-plus')[i];
-  const isOpen = body.style.display === 'block';
-  body.style.display = isOpen ? 'none' : 'block';
-  plus.textContent = isOpen ? '+' : '×';
-}
-</script>
-
-<!-- ════ NOELL OPS CRM ════ -->
-<section style="background:#FBF3EE;padding:clamp(56px,8vw,96px) 24px;">
-  <div style="max-width:1060px;margin:0 auto;">
-    <div style="text-align:center;margin-bottom:52px;">
-      <p style="font-weight:600;font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:#8B2A42;margin:0 0 14px;">Included in Full Stack and B2B packages</p>
-      <h2 style="font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:clamp(28px,4vw,44px);line-height:1.1;letter-spacing:-0.015em;color:#20131c;margin:0 0 18px;">The Noell Ops CRM</h2>
-      <p style="font-size:16px;line-height:1.65;color:#6e5b66;max-width:560px;margin:0 auto;">A live pipeline dashboard built for your business. HOT/WARM lead scoring, iMessage and email outreach sequences, contact management, and one-click enrollment. Runs under your brand.</p>
-    </div>
-
-    <!-- Dashboard mockup card -->
-    <div style="background:#1a0f14;border-radius:20px;padding:20px;box-shadow:0 24px 64px rgba(0,0,0,0.22);max-width:900px;margin:0 auto 56px;">
-      <!-- Browser chrome -->
-      <div style="display:flex;align-items:center;gap:6px;margin-bottom:16px;">
-        <span style="width:12px;height:12px;border-radius:50%;background:#ff5f57;display:block;"></span>
-        <span style="width:12px;height:12px;border-radius:50%;background:#febc2e;display:block;"></span>
-        <span style="width:12px;height:12px;border-radius:50%;background:#28c840;display:block;"></span>
-        <span style="flex:1;height:22px;background:#2a1520;border-radius:6px;margin-left:8px;display:flex;align-items:center;justify-content:center;"><span style="font-size:11px;color:rgba(255,255,255,0.3);">opsbynoell.com</span></span>
-      </div>
-      <!-- Dashboard interior -->
-      <div style="background:#fff;border-radius:12px;overflow:hidden;">
-        <!-- Top bar -->
-        <div style="background:#f8f4f2;border-bottom:1px solid #ede8e5;padding:12px 16px;display:flex;align-items:center;gap:12px;">
-          <div style="width:28px;height:28px;background:#8B2A42;border-radius:7px;display:flex;align-items:center;justify-content:center;"><span style="color:#fff;font-size:13px;font-weight:800;">N</span></div>
-          <span style="font-size:12px;font-weight:600;color:#20131c;">Ops by Noell</span>
-          <span style="font-size:10px;color:#9a8089;background:#fbeee9;border-radius:4px;padding:2px 7px;font-weight:600;">LEAD INTELLIGENCE</span>
-        </div>
-        <div style="display:grid;grid-template-columns:160px 1fr;min-height:280px;">
-          <!-- Sidebar -->
-          <div style="background:#faf7f5;border-right:1px solid #ede8e5;padding:12px 0;">
-            <div style="padding:8px 14px;margin:2px 8px;background:#8B2A42;border-radius:7px;display:flex;align-items:center;gap:8px;"><i class="ti ti-layout-dashboard" style="font-size:13px;color:#fff;"></i><span style="font-size:12px;font-weight:600;color:#fff;">Lead Dashboard</span></div>
-            <div style="padding:8px 14px;margin:2px 8px;display:flex;align-items:center;gap:8px;"><i class="ti ti-message" style="font-size:13px;color:#9a8089;"></i><span style="font-size:12px;color:#6e5b66;">Messages</span></div>
-            <div style="padding:8px 14px;margin:2px 8px;display:flex;align-items:center;gap:8px;"><i class="ti ti-users" style="font-size:13px;color:#9a8089;"></i><span style="font-size:12px;color:#6e5b66;">Contacts</span></div>
-            <div style="padding:8px 14px;margin:2px 8px;display:flex;align-items:center;gap:8px;"><i class="ti ti-send" style="font-size:13px;color:#9a8089;"></i><span style="font-size:12px;color:#6e5b66;">Sequences</span></div>
-            <div style="padding:8px 14px;margin:2px 8px;display:flex;align-items:center;gap:8px;"><i class="ti ti-chart-bar" style="font-size:13px;color:#9a8089;"></i><span style="font-size:12px;color:#6e5b66;">Analytics</span></div>
-          </div>
-          <!-- Main panel -->
-          <div style="padding:16px 20px;">
-            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
-              <span style="font-size:15px;font-weight:700;color:#20131c;">Lead Intelligence Dashboard</span>
-              <div style="display:flex;gap:6px;">
-                <span style="font-size:11px;font-weight:700;background:#8B2A42;color:#fff;border-radius:5px;padding:3px 9px;">Quick Enroll</span>
-                <span style="font-size:11px;font-weight:600;background:#fbeee9;color:#8B2A42;border-radius:5px;padding:3px 9px;border:1px solid rgba(139,42,66,0.2);">Export CSV</span>
-              </div>
-            </div>
-            <!-- Stat chips -->
-            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px;">
-              <div style="background:#faf7f5;border:1px solid #ede8e5;border-radius:8px;padding:10px 12px;">
-                <p style="font-size:10px;color:#9a8089;margin:0 0 3px;font-weight:600;">HOT LEADS</p>
-                <p style="font-size:20px;font-weight:800;color:#8B2A42;margin:0;">5</p>
-              </div>
-              <div style="background:#faf7f5;border:1px solid #ede8e5;border-radius:8px;padding:10px 12px;">
-                <p style="font-size:10px;color:#9a8089;margin:0 0 3px;font-weight:600;">WARM LEADS</p>
-                <p style="font-size:20px;font-weight:800;color:#d97706;margin:0;">4</p>
-              </div>
-              <div style="background:#faf7f5;border:1px solid #ede8e5;border-radius:8px;padding:10px 12px;">
-                <p style="font-size:10px;color:#9a8089;margin:0 0 3px;font-weight:600;">NEW THIS WEEK</p>
-                <p style="font-size:20px;font-weight:800;color:#20131c;margin:0;">2</p>
-              </div>
-              <div style="background:#faf7f5;border:1px solid #ede8e5;border-radius:8px;padding:10px 12px;">
-                <p style="font-size:10px;color:#9a8089;margin:0 0 3px;font-weight:600;">CONVERSION</p>
-                <p style="font-size:20px;font-weight:800;color:#20131c;margin:0;">0%</p>
-              </div>
-            </div>
-            <!-- Table rows -->
-            <div style="border:1px solid #ede8e5;border-radius:8px;overflow:hidden;">
-              <div style="display:grid;grid-template-columns:1fr 80px 80px 80px;background:#f8f4f2;padding:7px 12px;border-bottom:1px solid #ede8e5;">
-                <span style="font-size:10px;font-weight:700;color:#9a8089;text-transform:uppercase;letter-spacing:0.06em;">Visitor</span>
-                <span style="font-size:10px;font-weight:700;color:#9a8089;text-transform:uppercase;letter-spacing:0.06em;">Intent</span>
-                <span style="font-size:10px;font-weight:700;color:#9a8089;text-transform:uppercase;letter-spacing:0.06em;">Follow-up</span>
-                <span style="font-size:10px;font-weight:700;color:#9a8089;text-transform:uppercase;letter-spacing:0.06em;">Score</span>
-              </div>
-              <div style="display:grid;grid-template-columns:1fr 80px 80px 80px;padding:8px 12px;border-bottom:1px solid #f0ebe8;align-items:center;">
-                <span style="font-size:12px;font-weight:600;color:#20131c;">Pipeline Test</span>
-                <span style="font-size:11px;color:#6e5b66;">Booking</span>
-                <span style="font-size:11px;color:#6e5b66;">SMS sent</span>
-                <span style="font-size:11px;font-weight:700;color:#8B2A42;">HOT</span>
-              </div>
-              <div style="display:grid;grid-template-columns:1fr 80px 80px 80px;padding:8px 12px;align-items:center;">
-                <span style="font-size:12px;font-weight:600;color:#20131c;">Inbound SMS</span>
-                <span style="font-size:11px;color:#6e5b66;">Price check</span>
-                <span style="font-size:11px;color:#6e5b66;">Pending</span>
-                <span style="font-size:11px;font-weight:700;color:#d97706;">WARM</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CRM feature list -->
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:900px;margin:0 auto;">
-      <div style="display:flex;align-items:flex-start;gap:12px;">
-        <i class="ti ti-flame" style="font-size:22px;color:#8B2A42;flex-shrink:0;margin-top:1px;"></i>
-        <div><p style="font-size:14.5px;font-weight:700;color:#20131c;margin:0 0 3px;">HOT/WARM lead scoring</p><p style="font-size:13.5px;color:#6e5b66;margin:0;line-height:1.55;">Every lead ranked automatically so you know who to call first.</p></div>
-      </div>
-      <div style="display:flex;align-items:flex-start;gap:12px;">
-        <i class="ti ti-send" style="font-size:22px;color:#8B2A42;flex-shrink:0;margin-top:1px;"></i>
-        <div><p style="font-size:14.5px;font-weight:700;color:#20131c;margin:0 0 3px;">iMessage + email sequences</p><p style="font-size:13.5px;color:#6e5b66;margin:0;line-height:1.55;">Outreach that runs on your behalf, in your voice, at the right time.</p></div>
-      </div>
-      <div style="display:flex;align-items:flex-start;gap:12px;">
-        <i class="ti ti-bolt" style="font-size:22px;color:#8B2A42;flex-shrink:0;margin-top:1px;"></i>
-        <div><p style="font-size:14.5px;font-weight:700;color:#20131c;margin:0 0 3px;">Quick Enroll one-click</p><p style="font-size:13.5px;color:#6e5b66;margin:0;line-height:1.55;">Add a lead to any sequence in one click. No manual follow-up.</p></div>
-      </div>
-      <div style="display:flex;align-items:flex-start;gap:12px;">
-        <i class="ti ti-palette" style="font-size:22px;color:#8B2A42;flex-shrink:0;margin-top:1px;"></i>
-        <div><p style="font-size:14.5px;font-weight:700;color:#20131c;margin:0 0 3px;">Runs under your brand</p><p style="font-size:13.5px;color:#6e5b66;margin:0;line-height:1.55;">White-labeled with your logo and colors. Clients see you, not us.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ════ BUILD YOUR OWN STACK ════ -->
 <section style="background:#fff;padding:clamp(56px,8vw,96px) 24px;">
   <div style="max-width:1060px;margin:0 auto;">
@@ -583,6 +335,254 @@ function toggleFaq(i) {
     <p style="text-align:center;font-size:13px;color:#9a8089;margin:28px 0 0;line-height:1.65;">All engagements start with a free audit call. No bait pricing, no mystery scope. Your rate is locked from day one.<br>Upgrading between tiers is prorated and takes effect immediately. Downgrades take effect at the start of the next billing month.</p>
   </div>
 </section>
+
+<!-- ════ NOELL OPS CRM ════ -->
+<section style="background:#FBF3EE;padding:clamp(56px,8vw,96px) 24px;">
+  <div style="max-width:1060px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:52px;">
+      <p style="font-weight:600;font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:#8B2A42;margin:0 0 14px;">Included in Full Stack and B2B packages</p>
+      <h2 style="font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:clamp(28px,4vw,44px);line-height:1.1;letter-spacing:-0.015em;color:#20131c;margin:0 0 18px;">The Noell Ops CRM</h2>
+      <p style="font-size:16px;line-height:1.65;color:#6e5b66;max-width:560px;margin:0 auto;">A live pipeline dashboard built for your business. HOT/WARM lead scoring, iMessage and email outreach sequences, contact management, and one-click enrollment. Runs under your brand.</p>
+    </div>
+
+    <!-- Dashboard mockup card -->
+    <div style="background:#1a0f14;border-radius:20px;padding:20px;box-shadow:0 24px 64px rgba(0,0,0,0.22);max-width:900px;margin:0 auto 56px;">
+      <!-- Browser chrome -->
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:16px;">
+        <span style="width:12px;height:12px;border-radius:50%;background:#ff5f57;display:block;"></span>
+        <span style="width:12px;height:12px;border-radius:50%;background:#febc2e;display:block;"></span>
+        <span style="width:12px;height:12px;border-radius:50%;background:#28c840;display:block;"></span>
+        <span style="flex:1;height:22px;background:#2a1520;border-radius:6px;margin-left:8px;display:flex;align-items:center;justify-content:center;"><span style="font-size:11px;color:rgba(255,255,255,0.3);">opsbynoell.com</span></span>
+      </div>
+      <!-- Dashboard interior -->
+      <div style="background:#fff;border-radius:12px;overflow:hidden;">
+        <!-- Top bar -->
+        <div style="background:#f8f4f2;border-bottom:1px solid #ede8e5;padding:12px 16px;display:flex;align-items:center;gap:12px;">
+          <div style="width:28px;height:28px;background:#8B2A42;border-radius:7px;display:flex;align-items:center;justify-content:center;"><span style="color:#fff;font-size:13px;font-weight:800;">N</span></div>
+          <span style="font-size:12px;font-weight:600;color:#20131c;">Ops by Noell</span>
+          <span style="font-size:10px;color:#9a8089;background:#fbeee9;border-radius:4px;padding:2px 7px;font-weight:600;">LEAD INTELLIGENCE</span>
+        </div>
+        <div style="display:grid;grid-template-columns:160px 1fr;min-height:280px;">
+          <!-- Sidebar -->
+          <div style="background:#faf7f5;border-right:1px solid #ede8e5;padding:12px 0;">
+            <div style="padding:8px 14px;margin:2px 8px;background:#8B2A42;border-radius:7px;display:flex;align-items:center;gap:8px;"><i class="ti ti-layout-dashboard" style="font-size:13px;color:#fff;"></i><span style="font-size:12px;font-weight:600;color:#fff;">Lead Dashboard</span></div>
+            <div style="padding:8px 14px;margin:2px 8px;display:flex;align-items:center;gap:8px;"><i class="ti ti-message" style="font-size:13px;color:#9a8089;"></i><span style="font-size:12px;color:#6e5b66;">Messages</span></div>
+            <div style="padding:8px 14px;margin:2px 8px;display:flex;align-items:center;gap:8px;"><i class="ti ti-users" style="font-size:13px;color:#9a8089;"></i><span style="font-size:12px;color:#6e5b66;">Contacts</span></div>
+            <div style="padding:8px 14px;margin:2px 8px;display:flex;align-items:center;gap:8px;"><i class="ti ti-send" style="font-size:13px;color:#9a8089;"></i><span style="font-size:12px;color:#6e5b66;">Sequences</span></div>
+            <div style="padding:8px 14px;margin:2px 8px;display:flex;align-items:center;gap:8px;"><i class="ti ti-chart-bar" style="font-size:13px;color:#9a8089;"></i><span style="font-size:12px;color:#6e5b66;">Analytics</span></div>
+          </div>
+          <!-- Main panel -->
+          <div style="padding:16px 20px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
+              <span style="font-size:15px;font-weight:700;color:#20131c;">Lead Intelligence Dashboard</span>
+              <div style="display:flex;gap:6px;">
+                <span style="font-size:11px;font-weight:700;background:#8B2A42;color:#fff;border-radius:5px;padding:3px 9px;">Quick Enroll</span>
+                <span style="font-size:11px;font-weight:600;background:#fbeee9;color:#8B2A42;border-radius:5px;padding:3px 9px;border:1px solid rgba(139,42,66,0.2);">Export CSV</span>
+              </div>
+            </div>
+            <!-- Stat chips -->
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px;">
+              <div style="background:#faf7f5;border:1px solid #ede8e5;border-radius:8px;padding:10px 12px;">
+                <p style="font-size:10px;color:#9a8089;margin:0 0 3px;font-weight:600;">HOT LEADS</p>
+                <p style="font-size:20px;font-weight:800;color:#8B2A42;margin:0;">5</p>
+              </div>
+              <div style="background:#faf7f5;border:1px solid #ede8e5;border-radius:8px;padding:10px 12px;">
+                <p style="font-size:10px;color:#9a8089;margin:0 0 3px;font-weight:600;">WARM LEADS</p>
+                <p style="font-size:20px;font-weight:800;color:#d97706;margin:0;">4</p>
+              </div>
+              <div style="background:#faf7f5;border:1px solid #ede8e5;border-radius:8px;padding:10px 12px;">
+                <p style="font-size:10px;color:#9a8089;margin:0 0 3px;font-weight:600;">NEW THIS WEEK</p>
+                <p style="font-size:20px;font-weight:800;color:#20131c;margin:0;">2</p>
+              </div>
+              <div style="background:#faf7f5;border:1px solid #ede8e5;border-radius:8px;padding:10px 12px;">
+                <p style="font-size:10px;color:#9a8089;margin:0 0 3px;font-weight:600;">CONVERSION</p>
+                <p style="font-size:20px;font-weight:800;color:#20131c;margin:0;">0%</p>
+              </div>
+            </div>
+            <!-- Table rows -->
+            <div style="border:1px solid #ede8e5;border-radius:8px;overflow:hidden;">
+              <div style="display:grid;grid-template-columns:1fr 80px 80px 80px;background:#f8f4f2;padding:7px 12px;border-bottom:1px solid #ede8e5;">
+                <span style="font-size:10px;font-weight:700;color:#9a8089;text-transform:uppercase;letter-spacing:0.06em;">Visitor</span>
+                <span style="font-size:10px;font-weight:700;color:#9a8089;text-transform:uppercase;letter-spacing:0.06em;">Intent</span>
+                <span style="font-size:10px;font-weight:700;color:#9a8089;text-transform:uppercase;letter-spacing:0.06em;">Follow-up</span>
+                <span style="font-size:10px;font-weight:700;color:#9a8089;text-transform:uppercase;letter-spacing:0.06em;">Score</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 80px 80px 80px;padding:8px 12px;border-bottom:1px solid #f0ebe8;align-items:center;">
+                <span style="font-size:12px;font-weight:600;color:#20131c;">Pipeline Test</span>
+                <span style="font-size:11px;color:#6e5b66;">Booking</span>
+                <span style="font-size:11px;color:#6e5b66;">SMS sent</span>
+                <span style="font-size:11px;font-weight:700;color:#8B2A42;">HOT</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 80px 80px 80px;padding:8px 12px;align-items:center;">
+                <span style="font-size:12px;font-weight:600;color:#20131c;">Inbound SMS</span>
+                <span style="font-size:11px;color:#6e5b66;">Price check</span>
+                <span style="font-size:11px;color:#6e5b66;">Pending</span>
+                <span style="font-size:11px;font-weight:700;color:#d97706;">WARM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CRM feature list -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:900px;margin:0 auto;">
+      <div style="display:flex;align-items:flex-start;gap:12px;">
+        <i class="ti ti-flame" style="font-size:22px;color:#8B2A42;flex-shrink:0;margin-top:1px;"></i>
+        <div><p style="font-size:14.5px;font-weight:700;color:#20131c;margin:0 0 3px;">HOT/WARM lead scoring</p><p style="font-size:13.5px;color:#6e5b66;margin:0;line-height:1.55;">Every lead ranked automatically so you know who to call first.</p></div>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:12px;">
+        <i class="ti ti-send" style="font-size:22px;color:#8B2A42;flex-shrink:0;margin-top:1px;"></i>
+        <div><p style="font-size:14.5px;font-weight:700;color:#20131c;margin:0 0 3px;">iMessage + email sequences</p><p style="font-size:13.5px;color:#6e5b66;margin:0;line-height:1.55;">Outreach that runs on your behalf, in your voice, at the right time.</p></div>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:12px;">
+        <i class="ti ti-bolt" style="font-size:22px;color:#8B2A42;flex-shrink:0;margin-top:1px;"></i>
+        <div><p style="font-size:14.5px;font-weight:700;color:#20131c;margin:0 0 3px;">Quick Enroll one-click</p><p style="font-size:13.5px;color:#6e5b66;margin:0;line-height:1.55;">Add a lead to any sequence in one click. No manual follow-up.</p></div>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:12px;">
+        <i class="ti ti-palette" style="font-size:22px;color:#8B2A42;flex-shrink:0;margin-top:1px;"></i>
+        <div><p style="font-size:14.5px;font-weight:700;color:#20131c;margin:0 0 3px;">Runs under your brand</p><p style="font-size:13.5px;color:#6e5b66;margin:0;line-height:1.55;">White-labeled with your logo and colors. Clients see you, not us.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ ROI NUDGE ════ -->
+<section style="padding:0 24px clamp(56px,9vw,104px);">
+  <div style="max-width:760px;margin:0 auto;text-align:center;background:#fff;border:1px solid rgba(139,42,66,0.18);border-radius:24px;padding:clamp(32px,5vw,48px);box-shadow:0 4px 8px rgba(28,25,23,.05),0 16px 26px rgba(139,42,66,0.08);">
+    <p style="font-weight:600;font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:#8B2A42;margin:0 0 14px;">Not sure which tier?</p>
+    <h2 style="font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:clamp(24px,3.2vw,34px);line-height:1.12;color:#20131c;margin:0 0 14px;text-wrap:balance;">See what a missed call is costing you first.</h2>
+    <p style="font-size:16px;line-height:1.65;color:#6e5b66;margin:0 0 28px;">Run the numbers in the ROI calculator, then book a free audit. We'll tell you which track fits, even if it's the smallest one.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
+      <a href="index.html#calc" class="roi-btn-wine" style="display:inline-flex;align-items:center;justify-content:center;height:54px;padding:0 28px;background:#8B2A42;color:#fff;font-weight:700;font-size:15px;text-decoration:none;border-radius:12px;box-shadow:0 4px 8px rgba(90,31,48,.2),inset 0 1px 1px 2px rgba(255,255,255,0.2),inset 0 -1px 5px 2px rgba(255,255,255,0.12);transition:transform .2s cubic-bezier(.16,1,.3,1);">Open the ROI calculator</a>
+      <a href="index.html#book" class="roi-btn-cream" style="display:inline-flex;align-items:center;justify-content:center;height:54px;padding:0 28px;background:#FBF3EE;color:#8B2A42;font-weight:700;font-size:15px;text-decoration:none;border:1.5px solid rgba(139,42,66,0.4);border-radius:12px;transition:transform .2s cubic-bezier(.16,1,.3,1);">Book a free audit</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════ FAQ ════ -->
+<section style="background:#FBF3EE;padding:clamp(56px,8vw,96px) 24px;">
+  <div style="max-width:780px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:48px;">
+      <p style="font-weight:600;font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:#8B2A42;margin:0 0 14px;">Questions</p>
+      <h2 style="font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:clamp(26px,3.5vw,40px);line-height:1.1;color:#20131c;margin:0;">Everything you'd want to know <em style="font-style:italic;font-weight:500;">before signing up.</em></h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:2px;" id="faq-list">
+
+      <div class="faq-item" id="faq-0" style="background:#fff;border:1px solid rgba(139,42,66,0.12);border-radius:14px;overflow:hidden;">
+        <button onclick="toggleFaq(0)" style="width:100%;text-align:left;padding:20px 22px;background:none;border:0;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;font-family:inherit;">
+          <span style="font-size:15.5px;font-weight:600;color:#20131c;line-height:1.4;">What's the difference between Signal, System, and Full Stack?</span>
+          <span class="faq-plus" style="font-size:22px;color:#8B2A42;flex-shrink:0;line-height:1;margin-top:1px;">+</span>
+        </button>
+        <div class="faq-body" style="display:none;padding:0 22px 20px;">
+          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0 0 10px;">Signal ($397/mo) is the entry tier. All three agents are included: Noell Support handles 24/7 website chat and lead capture with HOT/WARM scoring, Noell Front Desk answers calls and schedules, and Noell Care handles returning clients — all working alongside your existing booking tool.</p>
+          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0 0 10px;">System ($897/mo) is the same three agents with the operational depth turned on: deep two-way integration with your PMS or booking tool (reading availability and writing confirmed bookings back), reactivation campaigns, no-show recovery, and review automation. Most practices start here.</p>
+          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0;">Full Stack ($1,497/mo) is for owners who want Noell to run the whole operation. Everything in System, plus a full website build or redesign, the Noell Ops CRM replacing GoHighLevel, a click-through audit, custom automation workflows, and a dedicated ops partner.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="faq-1" style="background:#fff;border:1px solid rgba(139,42,66,0.12);border-radius:14px;overflow:hidden;">
+        <button onclick="toggleFaq(1)" style="width:100%;text-align:left;padding:20px 22px;background:none;border:0;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;font-family:inherit;">
+          <span style="font-size:15.5px;font-weight:600;color:#20131c;line-height:1.4;">Is this month-to-month or a contract?</span>
+          <span class="faq-plus" style="font-size:22px;color:#8B2A42;flex-shrink:0;line-height:1;margin-top:1px;">+</span>
+        </button>
+        <div class="faq-body" style="display:none;padding:0 22px 20px;">
+          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0;">Month-to-month. No long-term contracts. Cancel anytime with 30 days notice. Your monthly rate is locked at the price you signed up at for as long as you stay on that tier. Most clients stay because the agents pay for themselves within the first 60 days.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="faq-2" style="background:#fff;border:1px solid rgba(139,42,66,0.12);border-radius:14px;overflow:hidden;">
+        <button onclick="toggleFaq(2)" style="width:100%;text-align:left;padding:20px 22px;background:none;border:0;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;font-family:inherit;">
+          <span style="font-size:15.5px;font-weight:600;color:#20131c;line-height:1.4;">What if it doesn't work for my business?</span>
+          <span class="faq-plus" style="font-size:22px;color:#8B2A42;flex-shrink:0;line-height:1;margin-top:1px;">+</span>
+        </button>
+        <div class="faq-body" style="display:none;padding:0 22px 20px;">
+          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0;">Every install includes a 90-day results check-in. If by day 90 the system hasn't produced measurable lift in at least one of: recovered calls, booked appointments, or captured reviews, we rebuild the core flows at no charge. If the rebuild hasn't moved the numbers by day 120, you can cancel with no further obligation. The one-time setup fee isn't refundable once provisioning has begun.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="faq-3" style="background:#fff;border:1px solid rgba(139,42,66,0.12);border-radius:14px;overflow:hidden;">
+        <button onclick="toggleFaq(3)" style="width:100%;text-align:left;padding:20px 22px;background:none;border:0;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;font-family:inherit;">
+          <span style="font-size:15.5px;font-weight:600;color:#20131c;line-height:1.4;">Do I need to replace my current booking tool?</span>
+          <span class="faq-plus" style="font-size:22px;color:#8B2A42;flex-shrink:0;line-height:1;margin-top:1px;">+</span>
+        </button>
+        <div class="faq-body" style="display:none;padding:0 22px 20px;">
+          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0;">No. The Noell system layers on top of the booking, practice management, and field service software you already run across dental, salon and spa, wellness, and home services. Your team keeps the tool they trained on. On Signal, the system works alongside your tool via SMS and chat. On System and Full Stack, it integrates directly (reads availability, writes confirmed bookings back). Tell us what you use on your audit call and we'll confirm fit.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="faq-4" style="background:#fff;border:1px solid rgba(139,42,66,0.12);border-radius:14px;overflow:hidden;">
+        <button onclick="toggleFaq(4)" style="width:100%;text-align:left;padding:20px 22px;background:none;border:0;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;font-family:inherit;">
+          <span style="font-size:15.5px;font-weight:600;color:#20131c;line-height:1.4;">What does "managed" actually mean?</span>
+          <span class="faq-plus" style="font-size:22px;color:#8B2A42;flex-shrink:0;line-height:1;margin-top:1px;">+</span>
+        </button>
+        <div class="faq-body" style="display:none;padding:0 22px 20px;">
+          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0;">You never touch the backend. Ongoing copy tweaks, automation adjustments, integration fixes, new review responses, seasonal campaign setup, messaging around holidays and closures — we handle all of it. The Noell team is the admin. You get the monthly report. If something isn't working, you tell us and we fix it. Managed means you don't become an ops person in addition to running your practice.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="faq-5" style="background:#fff;border:1px solid rgba(139,42,66,0.12);border-radius:14px;overflow:hidden;">
+        <button onclick="toggleFaq(5)" style="width:100%;text-align:left;padding:20px 22px;background:none;border:0;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;font-family:inherit;">
+          <span style="font-size:15.5px;font-weight:600;color:#20131c;line-height:1.4;">How long until the system is live?</span>
+          <span class="faq-plus" style="font-size:22px;color:#8B2A42;flex-shrink:0;line-height:1;margin-top:1px;">+</span>
+        </button>
+        <div class="faq-body" style="display:none;padding:0 22px 20px;">
+          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0;">14 days from audit-to-live on most installs. A2P SMS registration takes 2–4 weeks on the carrier side but runs in parallel, so your SMS delivery goes live as soon as carriers approve — usually within the first 14 days. Multi-location and Full Stack builds can take up to 21 days. Your audit call confirms the timeline for your specific setup.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="faq-6" style="background:#fff;border:1px solid rgba(139,42,66,0.12);border-radius:14px;overflow:hidden;">
+        <button onclick="toggleFaq(6)" style="width:100%;text-align:left;padding:20px 22px;background:none;border:0;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;font-family:inherit;">
+          <span style="font-size:15.5px;font-weight:600;color:#20131c;line-height:1.4;">What does Noell Support AI Chat actually do?</span>
+          <span class="faq-plus" style="font-size:22px;color:#8B2A42;flex-shrink:0;line-height:1;margin-top:1px;">+</span>
+        </button>
+        <div class="faq-body" style="display:none;padding:0 22px 20px;">
+          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0;">Noell Support is an AI chat agent on your website trained on your specific business — your services, pricing, hours, booking logic, tone. She handles the 80% of website conversations that are predictable: "Do you take my insurance?", "What's the earliest appointment?", "How much is a deep tissue?", "Can I reschedule?". She books appointments directly when she has enough information. When a conversation needs a human — refund requests, clinical questions, anything that smells like a complaint — she routes it to your team with the full chat context attached. She is not a generic ChatGPT wrapper.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="faq-7" style="background:#fff;border:1px solid rgba(139,42,66,0.12);border-radius:14px;overflow:hidden;">
+        <button onclick="toggleFaq(7)" style="width:100%;text-align:left;padding:20px 22px;background:none;border:0;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;font-family:inherit;">
+          <span style="font-size:15.5px;font-weight:600;color:#20131c;line-height:1.4;">What is no-show recovery?</span>
+          <span class="faq-plus" style="font-size:22px;color:#8B2A42;flex-shrink:0;line-height:1;margin-top:1px;">+</span>
+        </button>
+        <div class="faq-body" style="display:none;padding:0 22px 20px;">
+          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0;">When a client no-shows, most practices just lose the revenue and move on. No-show recovery automatically texts the client within minutes of the miss, offers the next two available slots on your calendar, and rebooks them without anyone at your practice lifting a finger. On average, no-show recovery rebooks 35–45% of misses within 7 days.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="faq-8" style="background:#fff;border:1px solid rgba(139,42,66,0.12);border-radius:14px;overflow:hidden;">
+        <button onclick="toggleFaq(8)" style="width:100%;text-align:left;padding:20px 22px;background:none;border:0;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;font-family:inherit;">
+          <span style="font-size:15.5px;font-weight:600;color:#20131c;line-height:1.4;">What is reactivation?</span>
+          <span class="faq-plus" style="font-size:22px;color:#8B2A42;flex-shrink:0;line-height:1;margin-top:1px;">+</span>
+        </button>
+        <div class="faq-body" style="display:none;padding:0 22px 20px;">
+          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0;">Reactivation campaigns automatically identify and contact inactive clients — typically 6+ months since last visit — with a sequence built around why they probably stopped coming. For salons, it's clients who drifted after a stylist moved. For massage and spa, it's seasonal drop-offs. For dental, it's unscheduled treatment plans sitting in the PMS. Reactivation is usually the highest-ROI automation a practice can run because the leads already know and trust you.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="faq-9" style="background:#fff;border:1px solid rgba(139,42,66,0.12);border-radius:14px;overflow:hidden;">
+        <button onclick="toggleFaq(9)" style="width:100%;text-align:left;padding:20px 22px;background:none;border:0;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;font-family:inherit;">
+          <span style="font-size:15.5px;font-weight:600;color:#20131c;line-height:1.4;">Can I upgrade or downgrade later?</span>
+          <span class="faq-plus" style="font-size:22px;color:#8B2A42;flex-shrink:0;line-height:1;margin-top:1px;">+</span>
+        </button>
+        <div class="faq-body" style="display:none;padding:0 22px 20px;">
+          <p style="font-size:14.5px;line-height:1.75;color:#4a3a44;margin:0;">Yes. Upgrades are prorated and take effect immediately. Downgrades take effect at the start of the next billing month so nothing gets orphaned mid-build. If you're on Full Stack and we're still building your site or migrating you onto the Noell Ops CRM when you downgrade, we finish what we started on the original tier. No half-built systems.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<script>
+function toggleFaq(i) {
+  const body = document.querySelectorAll('.faq-body')[i];
+  const plus = document.querySelectorAll('.faq-plus')[i];
+  const isOpen = body.style.display === 'block';
+  body.style.display = isOpen ? 'none' : 'block';
+  plus.textContent = isOpen ? '+' : '×';
+}
+</script>
 
 <!-- ════ FOOTER ════ -->
 <footer style="background:#fff;border-top:1px solid rgba(139,42,66,0.12);padding:clamp(44px,6vw,64px) 24px 36px;">
